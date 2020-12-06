@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 body {
   background: -webkit-linear-gradient(
@@ -29,6 +30,11 @@ a {
   margin: 0 auto;
 }
 
+.title {
+  font-size: 32px;
+  font-family: 'Dancing Script', cursive;
+}
+
 .row > div {
   float: left;
 }
@@ -45,7 +51,7 @@ a {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 120px;
+  margin-top: 35px;
 }
 
 .grid-container > div {
@@ -112,17 +118,17 @@ h1 {
 }
 
 .img-container {
-  margin: 28px 0 0 20px;
+  margin: 0px 0 0 20px;
 }
 
 .info-container {
-  margin: 50px 0 0 20px;
+  margin: 22px 0 0 20px;
   width: 63%;
 }
 
 .btn {
   display: inline-block;
-  border: 1px solid #000;
+  border: 1px solid #dbd8d7;
   padding: 5px;
   width: 80%;
   margin-bottom: 10px;
@@ -135,6 +141,8 @@ h1 {
 .btn:hover {
   color: #fff;
   transition: 0.5s;
+
+  border: 1px solid #2c3e50;
 }
 
 .btn::after {
@@ -151,8 +159,8 @@ h1 {
   z-index: -1;
 }
 .btn:hover::after {
-  height: 21px;
-  transition: 0.5s;
+  height: 22px;
+  transition: 0.3s;
   opacity: 0.7;
   border-radius: 5px;
 }
