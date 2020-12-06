@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,200&display=swap');
+
+body {
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: black;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'JetBrains Mono', monospace;
+
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.row > div {
+  float: left;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  z-index: -1;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 120px;
+}
+
+.grid-container > div {
+  padding: 15px;
+  border-radius: 10px;
+}
+p {
+  color: 1e1e1f;
+  font-size: 15px;
+  text-align: left;
+}
+ul {
+  color: black;
+  font-size: 15px;
+  text-align: left;
+}
+
+.item1 {
+  /* education*/
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  background-color: white;
+}
+.item2 {
+  /* work experience*/
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  background-color: white;
+}
+.item3 {
+  /* extracurricular*/
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  background-color: white;
+}
+
+.item4 {
+  /* picture*/
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  background-color: white;
+  text-align: center;
+}
+
+.item4 img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 100% 0%;
+  border: 2px solid #c4c0c0;
+  box-shadow: 16px 0px #bdc3c7;
+}
+.item5 {
+  /* extra info*/
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+  background-color: white;
+}
+
+h4,
+h1 {
+  text-align: center;
+}
+
+.img-container {
+  margin: 28px 0 0 20px;
+}
+
+.info-container {
+  margin: 50px 0 0 20px;
+  width: 63%;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 5px;
+  width: 80%;
+  margin-bottom: 10px;
+  position: relative;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  z-index: 100;
+}
+.btn:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.btn::after {
+  content: ' ';
+  display: block;
+  padding: 5px;
+  width: 97.5%;
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+  height: 0px;
+  background: #2c3e50;
+  opacity: 0;
+  z-index: -1;
+}
+.btn:hover::after {
+  height: 21px;
+  transition: 0.5s;
+  opacity: 0.7;
+  border-radius: 5px;
+}

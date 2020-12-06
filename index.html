@@ -2,10 +2,14 @@
 <html>
     <head> 
         <title>Dar Pelta Resume</title>
-        <link rel="STYLESHEET" href="Dar Pelta CVs.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
+       
+
+        <div class="wrapper">
+
         <h1>Dar Pelta Resume</h1>
         <div class= "grid-container"> 
             <div class= "item1"> <h4>EDUCATION</h4>
@@ -50,20 +54,29 @@
             </div> <!-- item3 --> 
 
             <div class="item4">
-                 <img src="dar.png" alt="my picture" width="150"> 
+                <div class="row">
+                <div class="img-container"> 
+                <img src="dar.png" alt="my picture" > 
+               </div>
+            <div class="info-container">
+                <a href="./ContactForm.html" class="btn">Contact me</a>
+                <a href="./ContactForm.html" class="btn">My Linkedin</a>
+                <a href="./ContactForm.html" class="btn" download>Download Dar's CV</a>
+            </div>
+        </div>
             </div> <!-- item4 --> 
             
             <div class="item5">
                 <h4>INFORMATION</h4>
                 January 4th, 1994 • (052) 5273122 • Darpelta@gmail.com 
 
-                <h6> <a href="file:///C:/Users/Owner/Documents/repos/hello-world-darpelta/ContactForm.html">
+                <h6> <a href="./ContactForm.html">
                     If You Want to Contact Me &#9993;</a> <!-- Form --> 
       
                 <h6><a href="https://www.linkedin.com/in/dar-pelta/?originalSubdomain=il"> My Linkedin </a> </h6>    
                      <!-- linked -->                
                    
-                <h6><a href="Dar Pelta CV.pdf" download> Download Dar's CV </a></h6>
+                <h6><a href="./dar_pelta_cv.pdf" download> Download Dar's CV </a></h6>
 
                 <h4>SKILLS</h4>
                     <p>
@@ -92,6 +105,8 @@
         </div><!-- grid-container --> 
 
 
+    </div>
+        <script src="./scripts.js"></script>
     </body>
 </html>
 
