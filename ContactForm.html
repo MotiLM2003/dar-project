@@ -2,58 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title> </title>
+
+    <title>Contact Dar Pelta</title>
   </head>
+  <link rel="stylesheet" href="styles.css" />
   <body>
-    <h1
-      style="
-        text-align: center;
-        font-size: 40px;
-        padding: 10px;
-        background-color: lightseagreen;
-      "
+      <div class="wrapper">
+    <h1 class="form-title"
+       
     >
-      For Contact Dar Pelta >
+      For Contact Dar Pelta
     </h1>
-    <form style="text-align: center">
-      <p>
+    <div class="wrapper">
+      <div id="formVisible">
+        <div class="form-container">
+    <form onsubmit="return confirmForm()" >
+     
+      <div class="form-group">
         <label for="ContactorName"> Who wants to Contact? </label>
-        <input type="text" id="ContactorName" name="ContactorName" />
-      </p>
-
-      <p>
+        <input type="text" id="ContactorName" name="ContactorName" placeholder="Who are you? :)" />
+      </div>
+      <div class="form-group">
         <label for="FirstName"> First Name</label>
-        <input type="text" id="FirstName" name="FirstName" />
-      </p>
-
-      <p>
+        <input type="text" id="FirstName" name="FirstName" placeholder="Enter your name"/>
+      </div>
+      <div class="form-group">
         <label for="Email"> Email for Respons</label>
-        <input type="text" id="Email" name="Email" />
-      </p>
+        <input type="text" id="Email" name="Email" placeholder="Enter your email" />
+      </div>
 
-      <p>
+       <div class="form-group">
+        <label for="selectGender"> Select gender</label>
+          <select id='selectGender' name="selectGender">
+              <option value="0">Male</option>
+              <option value="1">Gemale</option>
+              <option value="2">Other</option>
+          </select>
+       </div>
+      <!-- <p>
         <input type="radio" id="Male" name="gender" value="Male" />
         <label for="Male">Male</label><br />
         <input type="radio" id="Female" name="gender" value="Female" />
         <label for="Female">Female</label><br />
         <input type="radio" id="Other" name="gender" value="Other" />
         <label for="Other">Other</label>
-      </p>
-      <p>
-        <label for="comment">Please leave a comment</label>
-        <textarea id="comment" name="comment" cols="40" rows="5"></textarea>
-      </p>
+      </p> -->
+      <div class="form-group">
+        <label for="comment">&nbsp;</label>
+        <textarea id="comment" name="comment" cols="40" rows="5" placeholder="Please leave a comment"></textarea>
+      </div>
 
-      <label for="submit">Send The Form</label>
-      <p>
-        <input type="submit" value="Submit" />
-      </p>
+      <div class="form-group span-2">
+        <button type="submit" value="Send form" class="btn" > Send form</button>
+        <button class="btn" onclick="backToHome()">back to Dar pelta's CV</button>
+        </div>
 
-      <a
-        href="file:///C:/Users/Owner/Documents/repos/hello-world-darpelta/Dar_Pelta_CVs.html"
-      >
-        Back to Dar Pelta's CV
-      </a>
+      
     </form>
-  </body>
+    </div>
+  </div>
+  <div id="formDone">
+    Thank you for your feedback!
+    <div class="form-group">
+    <button class="btn" onclick="backToHome()">back to Dar pelta's CV</button>
+  </div>
+  </div>
+  </div>
+    <script src="./scripts.js" ></script>
+
+</body>
 </html>
